@@ -3,7 +3,7 @@ from numpy import nan_to_num, subtract, add, divide, multiply
 
 
 
-def comparison(in_before_band, in_after_band, in_rows, in_cols, data_type=gdal.GDT_Float32):
+def comparison(in_before_band, in_after_band, in_rows, in_cols):
 
     """
     Performs an NDVI calculation given two input bands, as well as other information that can be retrieved from the
