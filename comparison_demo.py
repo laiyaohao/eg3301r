@@ -11,7 +11,7 @@ after_ndvi = Open(r'y') #input desired image file name into y
 after_ndvi_band = after_ndvi.GetRasterBand(1)
 
 # Get the rows and cols from one of the images (both should always be the same)
-rows, cols = before_ndvi.RasterYSize, after_ndvi.RasterXSize
+rows, cols = before_ndvi.RasterYSize, before_ndvi.RasterXSize
 
 
 
