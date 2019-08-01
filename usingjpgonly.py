@@ -3,11 +3,11 @@ from gdal import Open
 from ndvi import ndvi
 
 # Open NIR image and get its only band.
-nir_tiff = Open(r'town_area_nir.jpg')
+nir_tiff = Open(r'infrared_v1_blacknwhite.jpg')
 nir_band = nir_tiff.GetRasterBand(1)
 
 # Open red image and get its only band.
-red_tiff = Open(r'town_area_red.jpg')
+red_tiff = Open(r'normal_red_v1.jpg')
 red_band = red_tiff.GetRasterBand(1)
 
 # Get the rows and cols from one of the images (both should always be the same)
@@ -17,7 +17,7 @@ print(geotransform)
 
 
 # Set the output for a 32-bit floating point (-1 to 1)
-out_tiff_float32 = r'town_area_ndvi_float32.tif'
+out_tiff_float32 = r'officeoutside_ndvi_float32.tif'
 
 
 
