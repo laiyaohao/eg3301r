@@ -17,7 +17,7 @@ print(geotransform)
 
 
 # Set the output for a 32-bit floating point (-1 to 1)
-out_tiff_float32 = r'town_area_ndvi_float32_v2.tif'
+out_tiff_float32 = r'central_catchment_area_vs_urban_area_ndvi_float32.tif'
 
 
 
