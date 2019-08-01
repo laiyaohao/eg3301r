@@ -7,7 +7,7 @@ nir_tiff = Open(r'town_area_nir.jpg')
 nir_band = nir_tiff.GetRasterBand(1)
 
 # Open red image and get its only band.
-red_tiff = Open(r'town_area_nir.jpg')
+red_tiff = Open(r'town_area_red.jpg')
 red_band = red_tiff.GetRasterBand(1)
 
 # Get the rows and cols from one of the images (both should always be the same)
